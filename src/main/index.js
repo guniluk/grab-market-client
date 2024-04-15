@@ -23,11 +23,7 @@ function MainPage() {
 
   return (
     <div>
-      <div id="header">
-        <div id="header-area">
-          <img src="images/icons/logo.png" alt="로고이미지" />
-        </div>
-      </div>
+
       <div id="body">
         <div id="banner">
           <img src="images/banners/banner1.png" alt="배너" />
@@ -39,7 +35,7 @@ function MainPage() {
             products.map(function (product, index) {
               return (
                 <div className="product-card">
-                  <Link className="product-link" to={`/products/${index}`}>
+                  <Link className="product-link" to={`/products/${product.id}`}>
                     <div>
                       <img className="product-img" src={product.imgUrl} alt="농구공1" />
                     </div>
@@ -58,7 +54,7 @@ function MainPage() {
         </div>
 
       </div>
-      <div id="footer"></div>
+
     </div>
   )
 };
