@@ -6,8 +6,10 @@ import ProductPage from './product/index.js';
 import { Button } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 
+
 function App() {
   const history = useHistory();
+
   return (
     <div>
       <div id="header">
@@ -20,8 +22,9 @@ function App() {
               // alert('업로드 클릭');
               history.push('/upload');
             }}
-            icon={<DownloadOutlined />}
-          >상품 업로드</Button>
+            icon={<DownloadOutlined />}>
+            상품 업로드
+          </Button>
         </div>
       </div>
 
@@ -38,11 +41,10 @@ function App() {
           </Route>
         </Switch>
       </div>
-      <div id="footer"></div>
 
+      <div id="footer"></div>
     </div>
   )
 };
-
 
 export default App;

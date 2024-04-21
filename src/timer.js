@@ -7,6 +7,7 @@ function TimerComponent() {
   // 두번째 case
   React.useEffect(function () {
     setTime(time + 1);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
